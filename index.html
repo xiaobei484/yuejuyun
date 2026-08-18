@@ -3,51 +3,35 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>阅剧云 · 小说短剧</title>
+<title>阅剧云</title>
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
 <header class="header">
-  <div class="container nav">
+  <div class="nav">
     <div class="logo">阅剧云</div>
-    <input class="search" id="searchInput" placeholder="搜索小说 / 短剧 / 作者 / 演员">
+    <input class="search" id="searchInput" placeholder="搜索小说 / 短剧">
     <button class="menu-btn" id="menuBtn">☰</button>
   </div>
 </header>
 
-<nav class="nav-menu" id="navMenu">
-  <a href="#novels">小说</a>
-  <a href="#dramas">短剧</a>
-  <a href="#rank">排行榜</a>
-</nav>
-
 <section class="hero">
-  <h1>现代主流 · 小说短剧</h1>
-  <p>24 本热门小说 · 27 部爆款短剧</p>
+  <h1>小说 · 短剧</h1>
+  <p>24 本小说 · 27 部短剧</p>
 </section>
 
-<section class="container" id="novels">
-  <h2>📖 热门小说</h2>
-  <div class="grid" id="novelList"></div>
+<section id="novels">
+  <div class="container">
+    <h2>📖 热门小说</h2>
+    <div class="grid" id="novelList"></div>
+  </div>
 </section>
 
-<section class="container" id="dramas">
-  <h2>🎬 精品短剧</h2>
-  <div class="grid" id="dramaList"></div>
-</section>
-
-<section class="container" id="rank">
-  <h2>🏆 排行榜</h2>
-  <div class="rank">
-    <div>
-      <h3>小说 TOP10</h3>
-      <ol id="novelRank"></ol>
-    </div>
-    <div>
-      <h3>短剧 TOP10</h3>
-      <ol id="dramaRank"></ol>
-    </div>
+<section id="dramas">
+  <div class="container">
+    <h2>🎬 精品短剧</h2>
+    <div class="grid" id="dramaList"></div>
   </div>
 </section>
 
@@ -65,8 +49,6 @@
   </div>
   <div class="reader-body" id="readerBody"></div>
 </div>
-
-<footer class="footer">© 2026 阅剧云 · 数据来源：起点 / 番茄 / 抖音 / DataEye</footer>
 
 <script src="js/data.js"></script>
 <script src="js/app.js"></script>
